@@ -66,7 +66,7 @@ import SimpleITK as sitk
 def resampleMHA(input_path, output_path, new_voxel_size, method):
     input_path = path_in(input_path)
 
-    # Load the input NIfTI image
+    # Load the input MHA binary image
     r = sitk.ImageFileReader()
     r.SetFileName(input_path)
     img = r.Execute()
